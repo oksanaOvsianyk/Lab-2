@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приватна клініка "ОК"</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Послуги</a>
+            <a href="doctors.html">Лікарі</a>
+            <a href="#">Контакти</a>
+        </nav>
+
+        <h1>Приватна клініка "ОК"</h1>
+        <p>Піклуємося про ваше здоров'я щодня</p>
+        <button class="header-btn">Замовити дзвінок</button>
+
+    </header>
+
+
+
+    <main>
+        <h2>Ласкаво просимо до нашої лікарні</h2>
+        <p>Ми надаємо якісні медичні послуги з турботою та професіоналізмом. Ваша довіра — наше натхнення.</p>
+
+        <section id="about-us">
+            <h2>Про нас</h2>
+            <p>Приватна клініка "ОК" — це сучасний медичний заклад, який вже понад 10 років надає високоякісні
+                медичні послуги. Ми прагнемо забезпечити наших пацієнтів найкращими умовами для лікування та
+                реабілітації, використовуючи передові технології та методики.</p>
+        </section>
+
+        <section class="services-list">
+            <h2>Наші послуги</h2>
+            <ul>
+                <li>Консультації лікарів різних спеціальностей</li>
+                <li>Діагностика та обстеження</li>
+                <li>Оперативне втручання</li>
+                <li>Реабілітаційні програми</li>
+                <li>Медичні аналізи</li>
+            </ul>
+        </section>
+
+        <section class="price-table">
+            <h2>Прайс-лист</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Послуга</th>
+                        <th>Ціна (грн)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Консультація терапевта</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>УЗД</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>Операція на серці</td>
+                        <td>25000</td>
+                    </tr>
+                    <tr>
+                        <td>Аналіз крові</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Реабілітація після операції</td>
+                        <td>1500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="appointment-form">
+            <h2>Записатися на прийом</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="doctor">Оберіть лікаря:</label>
+                <select id="doctor" name="doctor">
+                    <option value="therapist">Терапевт</option>
+                    <option value="cardiologist">Кардіолог</option>
+                    <option value="surgeon">Хірург</option>
+                    <option value="urologist">Уролог</option>
+                </select>
+
+                <label for="date">Оберіть дату:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Оберіть час:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="message">Додаткові побажання або питання:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+
+                <input type="submit" value="Записатися">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Приватна Лікарня "Здоров'я". Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>
